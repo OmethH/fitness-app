@@ -6,13 +6,13 @@ import {getMessaging, isSupported} from "firebase/messaging";
 
 //cred
 const firebaseConfig = {
-  apiKey: "AIzaSyDpQuDPPQSOMKR4uBeDEldOXYImhEgpJk0",
-  authDomain: "fitnessapp-acba1.firebaseapp.com",
-  projectId: "fitnessapp-acba1",
-  storageBucket: "fitnessapp-acba1.firebasestorage.app",
-  messagingSenderId: "555724150523",
-  appId: "1:555724150523:web:4c6489d9a6e39d1cd4025e",
-  measurementId: "G-PBS8SY5H49"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
